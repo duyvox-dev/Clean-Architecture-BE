@@ -1,0 +1,307 @@
+{
+	"id": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+	"name": "YoungTalentBackend",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Addresses",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"order": [
+				"9ec85248-da1d-6d27-4b0a-8d7d14511fd4",
+				"ae5a338f-073e-dcc7-223b-84ca95ba8da0",
+				"9e8a6624-3a1f-adbb-5b71-835b099d6d4d",
+				"8bff1c7a-ca54-b8c5-e278-3a4ff53384f0"
+			],
+			"owner": "17795345",
+			"folder": "bc6d1ece-8cbb-c1e9-4338-143e5022cda4",
+			"folders_order": [],
+			"id": "62fd65b2-6e39-ab24-88c7-82b0a4f4e46d"
+		},
+		{
+			"name": "Auth",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"order": [
+				"a032337e-c2e3-c99d-a9e4-b245046e077f",
+				"79464a68-ca00-2cb7-be44-aea047700202"
+			],
+			"owner": "17795345",
+			"folders_order": [],
+			"id": "b5c5bc70-8e30-1f1f-d85b-47ee7a43b0c7"
+		},
+		{
+			"name": "User",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"order": [
+				"9ee779e7-eb24-50e2-5737-b9c8718e91d5",
+				"7cf4e313-59c3-1dd9-a095-8fc809d5231b"
+			],
+			"owner": "17795345",
+			"folders_order": [
+				"62fd65b2-6e39-ab24-88c7-82b0a4f4e46d"
+			],
+			"id": "bc6d1ece-8cbb-c1e9-4338-143e5022cda4"
+		}
+	],
+	"folders_order": [
+		"b5c5bc70-8e30-1f1f-d85b-47ee7a43b0c7",
+		"bc6d1ece-8cbb-c1e9-4338-143e5022cda4"
+	],
+	"timestamp": 1672024774892,
+	"owner": "17795345",
+	"public": false,
+	"requests": [
+		{
+			"id": "79464a68-ca00-2cb7-be44-aea047700202",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/auth/signup",
+			"folder": "b5c5bc70-8e30-1f1f-d85b-47ee7a43b0c7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672025522244,
+			"name": "SIgnUp",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"thang@gmail.com\",\n\t\"password\": \"P@ssw0rd\",\n\t\"username\": \"thangcaosome\"\n}"
+		},
+		{
+			"id": "7cf4e313-59c3-1dd9-a095-8fc809d5231b",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM4MGY4ZDUwLWQ4NTQtNGUxNC1hMjY4LWZlZTRkMWM4OWJhNCIsImlhdCI6MTY3MjAyODgzMCwiZXhwIjoxNjc0NjIwODMwfQ.OgN40lNCIr51lwSHuccG_hm1hzzLNvVAfl19Fq6oSHk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM4MGY4ZDUwLWQ4NTQtNGUxNC1hMjY4LWZlZTRkMWM4OWJhNCIsImlhdCI6MTY3MjAyODgzMCwiZXhwIjoxNjc0NjIwODMwfQ.OgN40lNCIr51lwSHuccG_hm1hzzLNvVAfl19Fq6oSHk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672028838285,
+			"name": "Update user information",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"thanghandsome1302\"\n}"
+		},
+		{
+			"id": "8bff1c7a-ca54-b8c5-e278-3a4ff53384f0",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner/addresses",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672042969399,
+			"name": "Update address",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": [],
+			"rawModeData": "{\n\t\"street\": \"77 Tran Ke Xuong 123 aaaa\",\n\t\"city\": \"Ho Chi Minh\",\n\t\"country\": \"Viet Nam\"\n\t\n}"
+		},
+		{
+			"id": "9e8a6624-3a1f-adbb-5b71-835b099d6d4d",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzN2UwODFhLTgzYTctNDI4NC04NWE0LTY0ZTZkYTJjMWM3MCIsImlhdCI6MTY3MjAzNjM5OCwiZXhwIjoxNjc0NjI4Mzk4fQ.JgdefQ7WtWVkRFcSs_cdeRlIzZL43POqvB61KrkjYQ8\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzN2UwODFhLTgzYTctNDI4NC04NWE0LTY0ZTZkYTJjMWM3MCIsImlhdCI6MTY3MjAzNjM5OCwiZXhwIjoxNjc0NjI4Mzk4fQ.JgdefQ7WtWVkRFcSs_cdeRlIzZL43POqvB61KrkjYQ8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner/addresses/ad20b834-b532-4ada-8d7d-f8549d98f1d2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672036535027,
+			"name": "Remove address",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": []
+		},
+		{
+			"id": "9ec85248-da1d-6d27-4b0a-8d7d14511fd4",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner/addresses",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672042843263,
+			"name": "Add new address",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": [],
+			"rawModeData": "{\n\t\"street\": \"77 Tran Ke Xuong 123\",\n\t\"city\": \"Ho Chi Minh\",\n\t\"country\": \"Viet Nam\"\n}"
+		},
+		{
+			"id": "9ee779e7-eb24-50e2-5737-b9c8718e91d5",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzN2UwODFhLTgzYTctNDI4NC04NWE0LTY0ZTZkYTJjMWM3MCIsImlhdCI6MTY3MjAzNjM5OCwiZXhwIjoxNjc0NjI4Mzk4fQ.JgdefQ7WtWVkRFcSs_cdeRlIzZL43POqvB61KrkjYQ8\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzN2UwODFhLTgzYTctNDI4NC04NWE0LTY0ZTZkYTJjMWM3MCIsImlhdCI6MTY3MjAzNjM5OCwiZXhwIjoxNjc0NjI4Mzk4fQ.JgdefQ7WtWVkRFcSs_cdeRlIzZL43POqvB61KrkjYQ8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672036456376,
+			"name": "Get User Information",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": []
+		},
+		{
+			"id": "a032337e-c2e3-c99d-a9e4-b245046e077f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/auth/signin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672036433976,
+			"name": "SignIn",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"thang@gmail.com\",\n\t\"password\": \"P@ssw0rd\"\n}"
+		},
+		{
+			"id": "ae5a338f-073e-dcc7-223b-84ca95ba8da0",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNDljOWE2LTA2NTYtNGY2My1iOTIzLTdjNTE2YzVlMzg3NyIsImlhdCI6MTY3MjA0MjgxNywiZXhwIjoxNjc0NjM0ODE3fQ.z21scZyuOSG9uIxwO5c7BsIn0WA904uJM_1bKQxHX34",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/owner/addresses",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1672042846814,
+			"name": "Get Addresses",
+			"description": "",
+			"collectionId": "cb35965f-8aa9-ae7b-14c5-51b657ad529b",
+			"responses": []
+		}
+	]
+}
